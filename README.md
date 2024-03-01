@@ -1,4 +1,4 @@
-How to build apAplication in local : 
+How to build Aplication in local : 
 Step 1 : Download Xampp (v7.4) 
 Step 2 : In Xampp Control Panel, start module apache and MySQl, open phpMyadmin (http://localhost/phpmyadmin) 
 Step 3 : Click new , and create database (GO) 
