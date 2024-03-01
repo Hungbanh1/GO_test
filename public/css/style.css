@@ -1,0 +1,227 @@
+body {
+  color: #303841;
+  font-family: Rubik, sans-serif;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.d-none{
+  display: none!important;
+}
+.d-block{
+  display: block!important;
+}
+.po-eve-none{
+  pointer-events: none;
+}
+.po-rela{
+    position: relative;
+}
+.gray {
+  color: #777777;
+}
+.mb-20 {
+  margin-bottom: 20%;
+}
+.bg-gray{
+  background-color: rgb(225, 231, 237);
+
+}
+.bo-ra-50{
+  border-radius: 50%;
+}
+#shoesList {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+#shoesList:before {
+  content: "";
+  display: block;
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  border-radius: 100%;
+  transform: translateX(-50%) skewY(-8deg);
+  background-color: #f6c90e;
+  z-index: -1;
+  -webkit-animation: App_wave_3CtRm 8s ease-in-out infinite alternate;
+  animation: App_wave_3CtRm 8s ease-in-out infinite alternate;
+}
+.card {
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 360px;
+  height: 600px;
+  box-shadow: 0 3.2px 2.2px rgba(0, 0, 0, 0.02),
+    0 7px 5.4px rgba(0, 0, 0, 0.028), 0 12.1px 10.1px rgba(0, 0, 0, 0.035),
+    0 19.8px 18.1px rgba(0, 0, 0, 0.042),
+    0 34.7px 33.8px rgba(0, 0, 0, 0.05), 0 81px 81px rgba(0, 0, 0, 0.07);
+  border-radius: 30px;
+  overflow: hidden;
+  padding: 0 28px;
+  position: relative;
+  margin-bottom: 20px;
+  padding-top: 2%;
+}
+.card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #f6c90e;
+  top: -20%;
+  left: -50%;
+  z-index: 0;
+}
+.shoeItem {
+  overflow-y: auto;
+  padding-top: 5px;
+}
+.logo img {
+  display: block;
+  position: relative;
+}
+.our-products {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px 0;
+  position: relative;
+}
+.image-container {
+  width: 126px; /* Độ rộng của phần tử chứa ảnh */
+  height: 126px; /* Chiều cao của phần tử chứa ảnh */
+  display: flex; /* Sử dụng flexbox */
+  justify-content: center; /* Căn giữa theo chiều ngang */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+.img-check img{
+  width: 16px;
+  height: 16px!important;
+  background-color: transparent!important;
+  display: none;
+}
+.shoe-item img {
+  margin-top: 4%;
+  border-radius: 30px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgb(225, 231, 237);
+  text-align: center;
+}
+.shoe-item .desc {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+.item-shoe{
+  margin-bottom: 13% ;
+}
+.shoe-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 26px 0 20px;
+  line-height: 1.5;
+}
+.shoe-item .price {
+  font-size: 18px;
+  font-weight: 700;
+}
+.addCart {
+  cursor: pointer;
+  background-color: #f6c90e;
+  font-weight: 700;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: auto;
+  height: 46px;
+  min-width: 46px;
+  padding: 16px 20px;
+  border-radius: 100px;
+  transition: all 0.25s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.logo img {
+  display: block;
+  position: relative;
+}
+.our-products,
+.total {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 16px 0;
+  position: relative;
+}
+input[type="number"] {
+  width: 50px; /* Độ rộng */
+  padding: 5px; /* Khoảng cách nội dung và viền */
+  border: 1px solid #ccc; /* Viền */
+  border-radius: 5px; /* Bo tròn các góc */
+  text-align: center; /* Căn giữa nội dung */
+  font-size: 16px; /* Cỡ chữ */
+  box-sizing: border-box; /* Kích thước tính cả padding và border */
+}
+
+.delete-item{
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: all .25s ease;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6c90e;
+  transition: .2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.bg-qty {
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 100%;
+  background-color: #eee;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.value-qty {
+  font-size: 14px;
+  margin: 5px 8px;
+  width: 20px;
+  text-align: center;
+}
